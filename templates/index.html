@@ -23,6 +23,7 @@
     }
 
     nav {
+        position: sticky;
         background-color: rgb(194, 24, 24);
         display: flex;
         justify-content: space-between;
@@ -71,10 +72,37 @@
     }
 
     @media (width < 850px) {
+        nav ul {
+            position: fixed;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            z-index: -1;
+        }
 
+        nav .logo {
+            position: absolute;
+            width: 55px;
+            top: 5px;
+            margin-left: 0px;
+
+        }
+        #btn {
+            position: fixed;
+            color: white;
+            z-index: 10;
+            right: 5px;
+        }
     }
 </style>
+
 <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-bars" id="cancel"></i>
+    </label>
     <main>
         <header>
             <nav>
