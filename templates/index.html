@@ -86,12 +86,12 @@
     @media (width < 850px) {
         nav {
             height: 45px;
-            width: 165px;
-            background-color: red;
+            width: 175px;
+            background-color: rgb(137 37 37);
         }
 
         nav ul {
-            background-color: red;
+            background-color: rgb(137 37 37);
         }
 
         nav .logo {
@@ -121,29 +121,31 @@
         nav .leftside {
             position: fixed;
             flex-direction: column;
-            align-items: center;
             margin-top: 135px;
             left: -50px;
             font-size: 15px;
-            width: 165px;
+            width: 175px;
             gap: 10px;
         }
 
         nav .rightside {
             position: fixed;
             flex-direction: column;
-            align-items: center;
             top: 133px;
             left: 0;
             font-size: 15px;
-            width: 165px;
+            width: 175px;
             gap: 0px;
+            padding-bottom: 10px;
         }
 
         nav .rightside li {
             margin-top: 15px;
         }
         nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 30px;
             border-top: 2px solid rgba(255, 255, 255, .1);
         }
 
