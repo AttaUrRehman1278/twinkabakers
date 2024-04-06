@@ -23,7 +23,6 @@
     }
 
     nav {
-        position: sticky;
         background-color: rgb(194, 24, 24);
         display: flex;
         justify-content: space-between;
@@ -50,11 +49,14 @@
         color: white;
     }
 
+    nav ul li {
+        cursor: pointer;
+    }
+
 
     nav .logo {
         position: relative;
         right: 15px;
-        /* top: 25px; */
         width: 70px;
         border-radius: 60px;
     }
@@ -69,9 +71,24 @@
     label #cancel {
         position: absolute;
         cursor: pointer;
-        background: #0a3447;
-        border-radius: 3px;
         color: white;
+        background-color: red;
+        border-radius: 3px;
+    }
+
+    label #btn {
+        z-index: -1;
+        left: 10px;
+        top: 24px;
+        padding: 3px 6px;
+
+    }
+
+    label #cancel {
+        z-index: -1;
+        left: 170px;
+        top: 25px;
+        padding: 2px 3px;
     }
 
     @media (width < 1150px) {
@@ -91,34 +108,37 @@
         .heading {
             position: relative;
             font-size: 16px;
-            top: 150px;
-            left: -7px;
+            top: -60px;
+            left: 30px;
         }
 
-        nav ul {
+        .leftside {
+            position: fixed;
             flex-direction: column;
-            margin-top: 128px;
+            top: 47px;
+            left: -200px;
             width: 200px;
-            height: 100%;
+            height: 50%;
             background: #c21818;
+            transition: .5s;
         }
 
         label #btn {
             z-index: 10;
-            left: 10px;
-            top: 15px;
-            padding: 3px 6px;
+
         }
 
-        #cancel {
-            position: fixed;
+        label #cancel {
             z-index: 10;
-            left: 155px;
-            top: 15px;
-            padding: 2px 3px;
         }
 
+        nav {
+            height: 50px;
+        }
 
+        nav .logo {
+            top: 20px;
+        }
 
 
 
@@ -127,10 +147,18 @@
             width: 100%;
             padding: 10px 43px;
             border-top: 2px solid rgba(255, 255, 255, .1);
+            transition: .4s;
+        }
+
+        nav ul li:hover {
+            padding-left: 40px;
+        }
+
+        #check:checked ~ header nav div .leftside {
+            left: 0px;
         }
 
     }
-    
 </style>
 
 <body>
