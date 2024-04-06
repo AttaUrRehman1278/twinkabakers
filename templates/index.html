@@ -86,7 +86,7 @@
 
     label #cancel {
         z-index: -1;
-        left: 170px;
+        left: -170px;
         top: 25px;
         padding: 2px 3px;
     }
@@ -120,16 +120,17 @@
             width: 200px;
             height: 50%;
             background: #c21818;
-            transition: .5s;
+            transition: all 1.0s ease;
         }
 
         label #btn {
             z-index: 10;
-
+            transition: all .5s;
         }
 
         label #cancel {
             z-index: 10;
+            transition: all .5s ease;
         }
 
         nav {
@@ -139,8 +140,6 @@
         nav .logo {
             top: 20px;
         }
-
-
 
         nav ul li {
             box-sizing: border-box;
@@ -154,8 +153,16 @@
             padding-left: 40px;
         }
 
-        #check:checked ~ header nav div .leftside {
+        #check:checked~header nav div .leftside {
             left: 0px;
+        }
+        #check:checked ~ label #btn {
+            left: 200px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel {
+            left: 170px;
         }
 
     }
@@ -170,7 +177,7 @@
     <header>
         <nav>
             <div>
-                <div><a href="/" class="heading">Twinka Bakers</a></div>
+                <div><a href="/" class="heading">Twinka Bakes</a></div>
                 <ul class="leftside">
                     <li>Home</li>
                     <li>Cakes</li>
