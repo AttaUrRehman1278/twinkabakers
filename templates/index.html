@@ -181,10 +181,10 @@
                 <ul class="leftside">
                     <li><a href="/">Home</a></li>
                     <li><a href="{% url 'cakes'%}">Cakes</a></li>
-                    <li><a href="/templates/order_online.html">Order Online</a></li>
-                    <li><a href="/"></a>About Us</li>
-                    <li>Customer Review</li>
-                    <li>Contact Us</li>
+                    <li><a href="{% url 'order_online' %}">Order Online</a></li>
+                    <li><a href="{% url 'about_us' %}">About Us</a></li>
+                    <li><a href="{% url 'customer_review' %}">Customer Review</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
                 </ul>
             </div>
             <img src="{% static 'logo.png' %}" alt="logo" class="logo">
