@@ -21,5 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('cakes', views.cakes, name='cakes'),
+    path('order_online', views.order_online, name='order_online'),
+    path('about_us', views.about_us, name='about_us'),
+    path('customer_review', views.customer_review, name='customer_review'),
+    path('contact_us', views.contact_us, name='contact_us'),
 
 ]
