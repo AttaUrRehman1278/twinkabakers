@@ -19,7 +19,7 @@
         padding: 0;
         list-style: none;
         text-decoration: none;
-        font-family: 'Poppins', 'sans-serif';
+        font-family: 'poppins', 'sans-serif';
     }
 
     nav {
@@ -36,7 +36,7 @@
         gap: 30px;
     }
 
-    nav div > div a {
+    nav div>div a {
         color: white;
         font-size: 25px;
         margin-left: 10px;
@@ -149,20 +149,21 @@
             border-top: 2px solid rgba(255, 255, 255, .1);
             transition: .4s;
         }
-
-        nav .leftside a:hover {
-            padding-left: 20px;
+        nav .leftside li:hover {
+            padding-left: 40px;
         }
 
         #check:checked~header nav div .leftside {
             left: 0px;
         }
-        #check:checked ~ label #btn {
+
+        #check:checked~label #btn {
             left: 200px;
             opacity: 0;
             pointer-events: none;
         }
-        #check:checked ~ label #cancel {
+
+        #check:checked~label #cancel {
             left: 170px;
         }
 
