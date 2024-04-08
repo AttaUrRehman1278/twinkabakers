@@ -11,6 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Oleo+Script:wght@400;700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a46f58e3a.js" crossorigin="anonymous"></script>
 </head>
 <style>
@@ -20,7 +25,13 @@
         list-style: none;
         text-decoration: none;
         font-family: 'poppins', 'sans-serif';
+
     }
+
+    main {
+        background-color: white;
+    }
+
 
     nav {
         background-color: rgb(194, 24, 24);
@@ -92,6 +103,39 @@
         padding: 2px 3px;
     }
 
+    .firstsection {
+        display: flex;
+        width: 60vw;
+        /* margin: auto; */
+        justify-content: center;
+        margin-left: 250px;
+        gap: 80px;
+        flex-wrap: wrap;
+        align-items: center;
+        height: calc(100dvh - 75px);
+    }
+
+    .firstsection img {
+        width: 250px;
+    }
+
+    .firstsection .welcome {
+        width: 20vw;
+    }
+
+    .welcome h1 {
+        font-family: 'Tangerine', cursive;
+        color: #c21818;
+        font-size: 80px;
+    }
+
+    .welcome div {
+        font-family: 'Tangerine', cursive;
+        color: #c21818;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+
     @media (width < 1150px) {
         nav ul {
             font-size: 13px;
@@ -149,6 +193,7 @@
             border-top: 2px solid rgba(255, 255, 255, .1);
             transition: .4s;
         }
+
         nav ul li a:hover {
             padding-left: 40px;
         }
@@ -193,7 +238,17 @@
         </nav>
     </header>
     <main>
-
+        <section class="firstsection">
+            <img src="{% static 'cake1.jpg' %}" alt="">
+            <div class="welcome">
+                <h1>Welcome</h1>
+                <div>to Twinka Bakes</div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, suscipit consequatur unde vero
+                    molestias praesentium labore deleniti nihil. Dolores minus error impedit a?
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 
