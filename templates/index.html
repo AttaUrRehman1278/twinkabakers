@@ -105,16 +105,16 @@
 
     .homesection {
         display: flex;
-        width: 70vw;
         margin: auto;
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
         height: calc(100dvh - 75px);
+        opacity: 0.9;
     }
 
     .homesection img {
-        width: 250px;
+        width: 300px;
     }
 
     .homesection .welcome {
@@ -219,7 +219,10 @@
         #check:checked~label #cancel {
             left: 170px;
         }
-
+        .homesection {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
     }
 </style>
 
