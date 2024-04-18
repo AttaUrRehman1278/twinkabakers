@@ -91,6 +91,17 @@
         top: 25px;
         padding: 2px 3px;
     }
+    .aboutsection{
+        background: url('static/about_us_bg.jpg') no-repeat;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
 
     @media (width < 1150px) {
         nav ul {
@@ -194,7 +205,18 @@
     </header>
     <main>
         <section class="aboutsection">
-            <img src="{% static 'about_us_bg' %}" alt="" class="bg_image">
+            <div class="about">
+                <h2>About</h2>
+                <p class="para1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi eum. Sit ducimus reprehenderit distinctio eius nihil perspiciatis? Expedita aspernatur dolore sint debitis.
+                </p>
+                <p class="para2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi eum. Sit ducimus reprehenderit distinctio eius nihil perspiciatis? Expedita aspernatur dolore sint debitis.
+                </p>
+                <p class="para3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi eum. Sit ducimus reprehenderit distinctio eius nihil perspiciatis? Expedita aspernatur dolore sint debitis.
+                </p>
+            </div>
         </section>
     </main>
 </body>
